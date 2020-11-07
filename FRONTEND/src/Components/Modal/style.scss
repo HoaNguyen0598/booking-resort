@@ -1,0 +1,52 @@
+.tabAddItem{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background: rgba(0,0,0,0.2);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#modal{
+    background: var(--mainWhite);
+    border-radius: 5px;
+}
+.btn-item{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    background: transparent;
+    border: 0.05rem solid var(--lightBlue);
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    margin: 0.2rem 0.5rem 0.2rem 0;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        background: var(--lightBlue);
+        color: white;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.btn-add-item{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    background: transparent;
+    color:var(--mainYellow);
+    border: 0.05rem solid var(--mainYellow);
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    margin: 0.2rem 0.5rem 0.2rem 0;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        background: var(--mainYellow);
+        color: white;
+    }
+    &:focus{
+        outline: none;
+    }
+}

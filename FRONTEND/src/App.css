@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --primaryColor: #af9a7d;
+    --mainWhite: #fff;
+    --offWhite: #f7f7f7;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --darkGrey: #cfcfcf;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 3px;
+    --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+  body {
+    padding-top: 100px;
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: var(--mainSpacing);
+    color: var(--mainBlack);
+    background: var(--primaryColor);
+    padding: 0.4rem 0.9rem;
+    border: 3px solid var(--primaryColor);
+    transition: var(--mainTransition);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background: transparent;
+    color: var(--primaryColor);
+  }
+
+  /* single room...................................................................................... */
+  .abcxxx img{
+    background: center/cover no-repeat;;
+  }
+  .single-room {
+    padding: 5rem 0 0 0;
+  }
+  .single-room-images {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 50px;
+  }
+  .single-room-images img {
+    width: 100%;
+    display: block;
+  }
+  .single-room-info {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+  }
+  .desc,
+  .info {
+    margin: 1rem 0;
+  }
+  .desc h3 {
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+  }
+  .desc p {
+    line-height: 1.5;
+  }
+  .info h2,
+  .info h4 {
+    
+    letter-spacing: var(--mainSpacing);
+  }
+  
+  .info h2 {
+    
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+  }
+  .room-extras {
+    width: 80vw;
+    margin: 0 auto 3rem auto;
+  }
+  .info .btn-booking{
+    margin-top: 20px;
+  }
+  .btn-booking{
+    border:none;
+    color:white;
+    padding: 10px 20px;
+    background-color:#48b4f4 ;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .abtn-booking{
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+  }
+  .btn-booking:hover{
+    background-color: #f7a13f;
+    color:white;
+  }
+  .room-extras h2 {
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+  }
+  .extras {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+  }
+  @media screen and (min-width: 992px) {
+    .single-room-images,
+    .single-room-info,
+    .room-extras {
+      width: 95vw;
+      max-width: 1170px;
+    }
+    .single-room-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+    }
+    .info {
+      padding-left: 3rem;
+    }
+  }
+
+  /* booking ................................................................................... */
+  .content-booking{
+    display: flex;
+    background: var(--mainGrey);
+  }
+  .content-right{
+    width: 70%;
+  }
+  .form-book{
+    padding: 30px 15px 130px 15px;
+    width: 90%;
+    margin-left: 30px;
+    background: white;
+  }
+
+  .h1-title{
+    padding-top: 50px;
+  }
+  .line-title{
+    width: 100%;
+    padding-top: 50px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    
+  }
+  .line-title span{
+    font-size: 14px;
+    color: #222;
+    font-weight: 600;
+    border-bottom: 1px solid #ff8917;
+    padding-bottom: 10px;
+    display: inline-block;
+    transform: translateY(1px);
+  }
+  .form-group{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px 15px ;
+
+  }
+  .form-group label{
+    color: #827d7d;
+  }
+  .form-group .react-datepicker-wrapper input{
+    font-size: 20px;
+    border: 1px solid #ded9d9;
+    padding: 10px;
+    color: #2f759e;
+  }
+  .form-control{
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    height: 40px;
+  }
+
+  .form-room{
+    padding: 120px 15px 130px 15px;
+    background: white;
+  }
+  .form-room .form-img img{
+    height: 140px;
+  }
+  .form-room h4{
+    color:#827d7d;
+  }
+  
+  .form-room-booking{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+  }
+  .form-room-left{
+    width: 50%;
+  }
+  .form-room-right{
+    width: 50%;
+  }
+  .form-price-left{
+    width: 50%;
+  }
+  .form-price-right{
+    width: 50%;
+  }
+  .form-price-right span{
+    color: #ff7829;
+    font-weight: bold;
+  }
+  .form-border-booking{
+    width: 90%;
+    border-bottom: 1px solid var(--primaryColor);
+    margin: 15px auto;
+  }
+
+  /* .modal{
+    display: none;
+  } */
+  #thanks{
+    display: none;
+  }
+  /* trip.......................................................................................... */
+  .link-trip{
+    color: #efe9de;
+    text-decoration: none;
+    font-size: 20px;
+    background: #56767b;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+  }
+  .link-trip:hover{
+    background: transparent;
+    color: #56767b;
+    border:1px solid #56767b;
+  }
+
+  /* newDeail..................................................................................... */
+  .content-detail{
+    margin:2rem;
+    padding:1rem ;
+  }
+  .title-news{
+
+  }
+  .desc-news{
+    padding:1rem;
+  }
+  .content-newss{
+    padding:1rem;
+  }
+  .img-news{
+    text-align: center;
+  }
+
+   /* Contact..................................................................................... */
+   .contact{
+     display: flex;
+     margin: 10px auto;
+     width: 80%;
+   }
+   .contact-left{
+    width: 40%;
+   }
+   .panel {
+    border: 1px solid #cab6b6;
+    box-shadow: var(--lightShadow);
+    overflow: hidden;
+    border-radius: 10px;
+   }
+   .panel-heading{
+      background: var(--primaryColor);
+      padding: 10px;
+   }
+   .panel-heading h3{
+     color: white;
+   }
+   .panel-body{
+     padding: 10px;
+   }
+   .margin-bottom{
+     padding-bottom: 10px;
+   }
+   .contact-right{
+     width: 55%;
+     margin: auto 10px auto auto;
+     box-shadow: var(--lightShadow);
+   }
+   .form-contact{
+    padding: 20px 0px 0px 0px;
+    margin: 0 20px;
+   }
+   .input-contact{
+    width: 100%;
+    background: #f6f6f6;
+    font-size: 13px;
+    padding: 10px 28px;
+    height: 45px;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid transparent;
+   }
+   .form-contact textarea{
+     height: 200px;
+   }
+   .btn-contact{
+     margin: 20px 10px;
+     color:black;
+     font-weight: bold;
+     padding: 10px 30px;
+     background-color: #f4d025;
+     border:none;
+     border-radius: 5px;
+   }

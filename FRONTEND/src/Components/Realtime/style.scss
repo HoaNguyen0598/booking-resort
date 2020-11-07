@@ -1,0 +1,78 @@
+.chat-message{
+    border: 1px solid;
+    width: 350px;
+    height: 100%;
+    border-radius: 5px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: white;
+}
+.title-message{
+    height: 60px;
+    margin-top: 0px;
+    background: #003ea4;
+    display: flex;
+    color: white;
+    width: 100%;
+}
+.render-chat{
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 15px;
+}
+.MyRow{
+    display: flex;
+    justify-content: flex-end;
+}
+.PartnerRow{
+
+}
+.bot-message{
+    display: flex;
+    justify-content: flex-start;
+}
+.bot-message::-webkit-scrollbar{
+    width: 10px;
+}
+.bot-message::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.1);
+}
+.title{
+    font-size: 20px;
+    padding: 10px 25px;
+}
+.btnClose{
+    cursor: pointer;
+    margin-left: 120px;
+}
+#card{
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   margin-right: 15px;
+   margin-bottom: 20px;
+}
+.icon-message{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.text{
+    width: 80%;
+}
+.btnSend{
+    background: #003ea4;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-top-right-radius: 50px;
+    width: 20%;
+    cursor: pointer;
+}

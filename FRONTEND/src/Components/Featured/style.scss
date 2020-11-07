@@ -1,0 +1,24 @@
+.featured-rooms {
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+  }
+  .featured-rooms-center {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 40px;
+  }
+  @media screen and (min-width: 776px) {
+    .featured-rooms-center {
+      width: 90vw;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .featured-rooms-center {
+      width: 95vw;
+      max-width: 1440px;
+    }
+  }

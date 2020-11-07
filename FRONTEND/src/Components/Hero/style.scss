@@ -1,0 +1,22 @@
+.defaultHero,
+.roomsHero,
+.Trip,
+.new {
+  min-height: calc(75vh - 66px);
+  background: url("../../images/defautBgr.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roomsHero {
+  background-image: url("../../images/rooms.jpg");
+  min-height: 75vh;
+}
+.Trip {
+    background-image: url("../../images/trip.webp") ;
+    min-height: 75vh;
+}
+.new{
+  background-image: url('../../images/news.jpg');
+  min-height:50vh;
+}

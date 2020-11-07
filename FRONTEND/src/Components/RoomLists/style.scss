@@ -1,0 +1,26 @@
+ .roomslist{
+     padding:5rem 0;
+ }
+.roomlist-center{
+    width: 70vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 2rem ;
+    grid-row-gap:2rem;
+}
+@media screen and (min-width: 776px) {
+    .roomlist-center {
+      width: 70vw;
+    }
+    .roomlist-center .room .img-container img{
+      
+      height: 167px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .roomlist-center {
+      width: 70vw;
+      //max-width: 1170px;
+    }
+  }

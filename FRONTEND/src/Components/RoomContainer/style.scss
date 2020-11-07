@@ -1,0 +1,12 @@
+.room-container{
+    display: flex;
+
+}
+.room-container .left{
+ 
+    width: 20%;
+}
+.room-container .right{
+    width: 80%;
+    display: grid;
+}
